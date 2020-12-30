@@ -121,8 +121,7 @@
 	animation: fa-spin 1s infinite steps(8)
 }
 
-@
-keyframes fa-spin { 0%{
+@keyframes fa-spin { 0%{
 	transform: rotate(0deg)
 }
 
