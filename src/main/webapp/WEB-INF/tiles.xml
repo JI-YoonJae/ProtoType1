@@ -32,5 +32,11 @@ PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
 	<definition name="bbs/bbsList" extends="bbs">
 		<put-attribute name="body" value="/WEB-INF/views/bbs/listBody.jsp"/>
 	</definition>
-		
+	
+	<!-- BBS Write Page -->
+	<definition name="bbs/bbsWrite" extends="bbs">
+		<put-attribute name="body" value="/WEB-INF/views/bbs/writeBody.jsp"/>
+	</definition>
+	
+	
 </tiles-definitions>
