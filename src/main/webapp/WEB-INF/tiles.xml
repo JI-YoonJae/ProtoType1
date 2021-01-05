@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions 
+PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Default Setting -->
+	<definition name="default" template="/WEB-INF/views/commons/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/commons/header.jsp" />
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/commons/footer.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/commons/Sidebar.jsp" />
+		<put-attribute name="script" value="/WEB-INF/views/commons/script.jsp" />
+	</definition>
+	
+	
+	<!-- Main Page -->
+	<definition name="home" extends="default">
+		<put-attribute name="body" value="/WEB-INF/views/commons/body.jsp"/>
+	</definition>
+	
+	<!-- BBS Setting -->
+	<definition name="bbs" template="/WEB-INF/views/bbs/bbslayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/commons/header.jsp" />
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/commons/footer.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/commons/Sidebar.jsp" />
+		<put-attribute name="script" value="/WEB-INF/views/commons/script.jsp" />
+	</definition>
+	
+	<!-- BBS List Page -->
+	<definition name="bbs/bbsList" extends="bbs">
+		<put-attribute name="body" value="/WEB-INF/views/bbs/listBody.jsp"/>
+	</definition>
+		
+</tiles-definitions>

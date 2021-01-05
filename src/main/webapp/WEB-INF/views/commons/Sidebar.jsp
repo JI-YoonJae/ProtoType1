@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!-- Sidebar -->
-<div id="sidebar">
-	<div class="inner">
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+
 
 		<!-- Search -->
 			<section id="search" class="alt">
