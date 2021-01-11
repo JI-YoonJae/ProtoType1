@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class BbsController {
 
 	private static final Logger logger = LoggerFactory.getLogger(BbsController.class);
+	
 	//BBS_List Page
 	@RequestMapping(value = "/bbsList", method = RequestMethod.GET)
 	public String Gobbs() {
@@ -17,6 +18,7 @@ public class BbsController {
 		logger.info("게시판 페이지 이동");
 		return "bbs/bbsList";
 	}
+	
 	//BBS_Write Page
 	@RequestMapping(value = "/bbsWrite", method = RequestMethod.GET)
 	public String gowritebbs() {
